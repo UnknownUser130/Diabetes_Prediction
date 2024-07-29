@@ -25,3 +25,11 @@ To get started with this project, clone the repository and install the necessary
 git clone https://github.com/UnknownUser130/Diabetes_Prediction.git
 cd diabetes-prediction
 ```
+To install requirements
+```bash
+pip install -r /path/to/requirements.txt
+```
+To run the the app
+```bash
+streamlit run app.py
+```
