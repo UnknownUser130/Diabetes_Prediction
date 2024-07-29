@@ -18,9 +18,23 @@ def predict_diabetes(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI
 def main():
     st.title("Diabetes Predictor")
     html_temp = """
-    <div style ="background-color:tomato;padding:10px">
-    <h2 style="color:white;text-align:center;">Diabetes Prediction ML App </h2>
+    <div style="
+        background: linear-gradient(135deg, #03c9c6, #0a9f9d);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+        text-align: center;">
+        <h2 style="
+            color: white;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            margin: 0;
+            ">
+            Diabetes Prediction ML App
+        </h2>
+    </div>
     """
+
     st.markdown(html_temp,unsafe_allow_html=True)
     Pregnancies =  st.text_input("Pregnancies","Type here")
     Glucose =  st.text_input("Glucose","Type here")
@@ -33,8 +47,20 @@ def main():
     result=""
     display=""
     if st.button("Predict"):
-        result=predict_diabetes(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age)
-    st.success('The Output is: {}'.format(result))
+        try:
+            result=predict_diabetes(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age)
+    
+            if result==1:
+                display="You are Diabetic"
+            else:
+                display="You are not Diabetic"
+
+            st.success('The Output is: {}'.format(display))
+        
+        except Exception as e:
+            print(e)
+            st.error("Please Enter Valid Data")
+
     if st.button("About"):
         st.text("This App uses Predictive Modelling to predict diabetes")
         st.text("Built with Streamlit")
