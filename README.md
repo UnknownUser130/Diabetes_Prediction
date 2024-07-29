@@ -27,7 +27,7 @@ cd diabetes-prediction
 ```
 To install requirements
 ```bash
-pip install -r /path/to/requirements.txt
+pip install -r requirements.txt
 ```
 To run the the app
 ```bash
