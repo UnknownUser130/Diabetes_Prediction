@@ -25,3 +25,12 @@ To get started with this project, clone the repository and install the necessary
 git clone https://github.com/UnknownUser130/Diabetes_Prediction.git
 cd diabetes-prediction
 ```
+To install requirements
+```bash
+pip install -r requirements.txt
+```
+To run the the app
+```bash
+streamlit run app.py
+```
+[Click Here to View](https://organic-train-q59xpv67654cx9jw-8501.app.github.dev/)
