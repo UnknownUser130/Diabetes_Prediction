@@ -33,4 +33,4 @@ To run the the app
 ```bash
 streamlit run app.py
 ```
-[Click Here to View](https://organic-train-q59xpv67654cx9jw-8501.app.github.dev/)
+[Click Here to View](https://diabetesprediction-mvhfdvx7lkypkne2ainnkd.streamlit.app/)
