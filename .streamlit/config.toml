@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#8080ff"  # Change this to your desired button color
+backgroundColor = "#E0F7FA"  # Example background color for a diabetes app
+textColor = "#000000"  # Adjust text color for readability
+secondaryBackgroundColor = "#ffffff"
+font = "sans serif"
